@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "shx cp -r ./build/* ../main/resources/public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,5 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "shx": "^0.3.3"
+  }
 }
